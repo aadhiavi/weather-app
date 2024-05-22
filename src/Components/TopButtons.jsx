@@ -28,7 +28,7 @@ const TopButtons = ({ setQuery }) => {
 
     return (
         <>
-<h1 className='flex items-center justify-center font-4xl'>Weather Dashboard<h1/>
+<h1 className='flex items-center justify-center font-4xl py-5'>Weather Dashboard<h1/>
 <div className='flex flex-wrap items-center justify-around my-6'>
             {
                 cities.map((city) => {
