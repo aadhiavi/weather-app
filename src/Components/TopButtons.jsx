@@ -27,7 +27,9 @@ const TopButtons = ({ setQuery }) => {
 
 
     return (
-        <div className='flex flex-wrap items=center justify-around my-6'>
+        <>
+<h1 className='flex items-center justify-center font-4xl'>Weather Dashboard<h1/>
+<div className='flex flex-wrap items-center justify-around my-6'>
             {
                 cities.map((city) => {
                     return (
@@ -38,6 +40,8 @@ const TopButtons = ({ setQuery }) => {
                 })
             }
         </div>
+
+</>
     )
 }
 
