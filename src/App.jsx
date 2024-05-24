@@ -8,6 +8,7 @@ import getFormattedWeatherData from './Services/WeatherService'
 
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import WeatherWarning from './Components/Warning'
 
 function capitalizeFirstLetter(string){
    return string.charAt(0).toUpperCase() + string.slice(1);
@@ -50,6 +51,7 @@ const App = () => {
             <TemAndDetails weather={weather} units={units} />
             <Forecast title='3 hour step forecast' data={weather.hourly} />
             <Forecast title='daily forecast' data={weather.daily} />
+            <WeatherWarning weather={weather}/>
           </>
         )
       }
